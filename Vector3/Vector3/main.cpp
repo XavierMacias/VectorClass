@@ -7,9 +7,24 @@
 int main()
 {
     //std::cout << "Hello World!\n";
-    Vect3* vec = new Vect3();
-    std::cout << "Cosos: " << vec->getSecond();
+    Vect3 a = Vect3(2.0f,7.0f,3.0f);
+    Vect3 b(a);
+    std::cout << "Vec: " << b.getSecond() << std::endl;
+    Vect3 f = Vect3(1.0f, 0.0f, 3.0f);
+    Vect3 c = b + a;
 
+    std::cout << "VecC: " << c.getSecond() << std::endl;
+
+    Vect3 d = a.normalize();
+    std::cout << "VecD: x: " << d.getFirst() << ", y: " << d.getSecond() << ", z: " << d.getThird() << std::endl;
+
+    std::cout << "DISTANCE: " << a.distance_to(c) << std::endl;
+    std::cout << "DOT PRODUCT: " << a.dot_product(c) << std::endl;
+
+    Vect3 e = a.cross_product(f);
+    std::cout << "VecE: x: " << e.getFirst() << ", y: " << e.getSecond() << ", z: " << e.getThird() << std::endl;
+
+    std::cout << "ANGLE: " << a.angle_between(f) << std::endl;
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
