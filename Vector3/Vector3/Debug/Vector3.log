@@ -1,2 +1,4 @@
 ﻿  main.cpp
+C:\Users\User\source\repos\Vector3\Vector3\Vect3.h(62,1): warning C4227: se ha utilizado un anacronismo: se omiten los calificadores de la referencia
+C:\Users\User\source\repos\Vector3\Vector3\Vect3.h(74): message : Vea la referencia a la creación de una instancia de clase plantilla "Vect3<T>" que se está compilando
   Vector3.vcxproj -> C:\Users\User\source\repos\Vector3\Debug\Vector3.exe

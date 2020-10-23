@@ -140,7 +140,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Vect3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Vect3.h" />
